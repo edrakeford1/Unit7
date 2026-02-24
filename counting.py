@@ -7,9 +7,9 @@ while active:
     message = input(prompt)
 
     if message == 'quit':
-        active = False
+        break
     elif message == 'parrot':
-        active = False
         print("Oh, think you're a wise guy huh?")
+        break
     else:
         print(message)
