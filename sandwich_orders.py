@@ -14,8 +14,14 @@ saying the deli has run out of pastrami, and then use a while loop to remove all
 of 'pastrami' from sandwich_orders. Make sure no pastrami sandwiches end up in finished_sandwiches
 """
 
-sandwich_orders = ['reuben', 'grilled cheese', 'pb & j', 'tuna', 'turkey']
+sandwich_orders = ['reuben', 'pastrami', 'grilled cheese', 'pastrami', 'pb & j', 'pastrami', 'tuna', 'turkey']
 finished_sandwiches = []
+
+print("The deli has run out of pastrami")
+
+# removing pastrami
+while 'pastrami' in sandwich_orders:
+    sandwich_orders.remove('pastrami')
 
 for sandwich_order in sandwich_orders:
     print(f"I have made you a {sandwich_order} sandwich")
