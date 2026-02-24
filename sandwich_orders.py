@@ -5,3 +5,15 @@ and print a message for each order, such as "I made you a tuna sandwich". As eac
 it to the list of finished sandwiches. After all of the sandwiches have been made, print a message
 listing each sandwich that was made
 """
+
+sandwich_orders = ['reuben', 'grilled cheese', 'pb & j', 'tuna', 'turkey']
+finished_sandwiches = []
+
+for sandwich_order in sandwich_orders:
+    print(f"I have made you a {sandwich_order} sandwich")
+    finished_sandwiches.append(sandwich_order)
+
+# printing the finished sandwiches
+print("\nThe sandwiches that have been made:")
+for finished_sandwich in finished_sandwiches:
+    print(finished_sandwich)
